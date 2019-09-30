@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exo1 : Les balises HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Mon site Web</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Accueil</a>
+                    </li>
+                    <li><a href="#about">A propos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contacts">Contacts</a></li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/julien-n-21219b28/" target="_blank">Linkedin</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about">
+                <h2>A propos</h2>
+
+                <h3>Education</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, cumque corporis! Natus molestias aut fugit praesentium, quia quibusdam hic blanditiis exercitationem temporibus! A quos dolorem similique quia voluptates molestias magni.</p>
+
+                <h3>Métier</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores eum repellat, illo, magni minima fuga facere sapiente veritatis inventore vitae obcaecati possimus harum. Rerum, inventore aliquam mollitia accusamus perferendis sapiente.</p>
+            </section>
+
+            <section id="portfolio">
+                <h2>Portfolio</h2>
+                <ul>
+                    <li>
+                        <img src="./img/docteur.jpg" alt="Docteur">
+                    </li>
+                    <li><img src="./img/fromage_1.jpg" alt="Fromage"></li>
+                    <li><img src="./img/sifflet.jpg" alt="Sifflet"></li>
+                    <li><img src="./img/fromage_2.jpg" alt="Fromage"></li>
+                </ul>
+            </section>
+
+            <section id="contacts">
+                <h2>Contacts</h2>
+
+                <form action="#">
+                    <label>Votre nom</label>
+                    <input type="text" name="userName">
+
+                    <label>Votre email</label>
+                    <input type="email" name="userEmail">
+
+                    <label>Votre message</label>
+                    <textarea name="userMessage"></textarea>
+
+                    <button type="submit">Envoyer</button>
+                </form>
+            </section>
+        </main>
+
+        <footer> 
+            <p>Under WTFPL Public Licence</p>
+        </footer> 
+    </body>
+</html>
