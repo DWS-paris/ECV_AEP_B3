@@ -11,7 +11,33 @@ Modifier le type de balise
 /**/
 
 
-p{
+section{
     /* Ajouter une bordure */
     border: 1px solid red;
+
+    /* Ajouter une marge ext. */
+    margin: 20px;
+
+    /* Ajouter une marge int. */
+    padding: 20px;
+
+    /* Changer la largeur de la balise */
+    width: 200px;
+
+    /* Changer la hauteur de la balise */
+    height: 150px;
+
+    /* Gérer le débordement */
+    overflow: auto;
+
+    /* Changer le mode d'affichage */
+    display: inline-block;
+
+    /* Modifier l'alignement */
+    vertical-align: top;
+
+    /* Inclure les paddings et les borders dans la taille des blocs */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
