@@ -1,0 +1,18 @@
+/* 
+Les sélecteurs
+*/
+    /* Sélecteur par ID */
+    #yellowTitle{
+        color: yellow;
+    }
+
+    /* Sélecteur par CLASS */
+    .blueColor{
+        color: blue;
+    }
+
+    /* Sélecteur par TAG */
+    h2{
+        color: red;
+    }
+/**/
