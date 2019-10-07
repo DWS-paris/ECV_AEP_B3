@@ -1,0 +1,107 @@
+/* 
+    - La section fait 300px de haut et 300px de large
+    - La section à une bordure de 5px rouge et plein
+    - Les articles font 50px de haut et 50px de large
+    - 1 article vert, 1 article jaune, 1 article rouge et un article noir (fond)
+*/
+
+h1{
+    margin-bottom: 100px;
+    background-color: purple;
+    color: white;
+
+    /* Figer la balise en haut de la page */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    /* Gestion de l'ordre des calques/couches */
+    z-index: 1000;
+}
+
+/* 
+    - La section fait 300px de haut et 300px de large
+    - La section à une bordure de 5px rouge et plein
+*/
+    section{
+        width: 300px;
+        height: 300px;
+        border: 5px solid red;
+
+        /* Centrer la balise dans la page */
+        margin: 200px auto 1000px auto;
+
+        /* Bloquer les enfants dans le parent */
+        position: relative;
+
+        /* Gérer les transitions */
+        -webkit-transition: all 1s;
+        -moz-transition: all 1s;
+        transition: all 1s;
+    }
+
+    section:hover{
+        -webkit-transform: rotateZ(360deg);
+        -moz-transform: rotateZ(360deg);
+        transform: rotateZ(360deg);
+    }
+/**/
+
+/* 
+    - Les articles font 50px de haut et 50px de large
+*/
+    article{
+        width: 50px;
+        height: 50px;
+    }
+/**/
+
+/* 
+    - 1 article vert, 1 article jaune, 1 article rouge et un article noir (fond)
+*/
+    article:first-of-type{
+        background-color: green;
+
+        /* Sortir la balise du flux de lecture */
+        position: absolute;
+
+        /* Repositionner la balise */
+        bottom: 0;
+        right: 0;
+    }
+
+    article:nth-child(2){
+        background-color: yellow;
+
+        /* Sortir la balise du flux de lecture */
+        position: absolute;
+
+        /* Repositionner la balise */
+        top: 0;
+        left: 0;
+    }
+
+    article:nth-child(3){
+        background-color: red;
+
+        /* Sortir la balise du flux de lecture */
+        position: absolute;
+
+        /* Repositionner la balise */
+        bottom: 0;
+        left: 0;
+    }
+
+    article:last-child{
+        color: white;
+        background-color: black;
+
+        /* Sortir la balise du flux de lecture */
+        position: absolute;
+
+        /* Repositionner la balise */
+        top: 0;
+        right: 0;
+    }
+/**/
