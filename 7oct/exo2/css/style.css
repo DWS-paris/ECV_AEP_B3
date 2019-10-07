@@ -1,0 +1,17 @@
+/* 
+Modifier le type de balise
+*/
+    li{
+        display: inline-block;
+    }
+
+    b {
+        display: block;
+    }
+/**/
+
+
+p{
+    /* Ajouter une bordure */
+    border: 1px solid red;
+}
