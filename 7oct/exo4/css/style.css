@@ -1,0 +1,33 @@
+header, main, footer{
+    max-width: 700px;
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* 
+- Tous les liens de la NAV sont à droite sauf le premier
+*/
+    nav {
+        text-align: right;
+
+        /* Bloquer les enfants dans le parents */
+        position: relative;
+    }
+
+    nav li{
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    nav li:first-of-type{
+        /* Sortir la balise du flux */
+        position: absolute;
+
+        /* Repositionner la balise */
+        left: 0;
+        margin-left: 0;
+    }
+/**/
