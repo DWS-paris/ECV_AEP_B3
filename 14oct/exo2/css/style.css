@@ -1,0 +1,96 @@
+/* 
+Global
+*/
+    body{
+        font-family: serif;
+        text-align: center;
+        color: white;
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 7rem;
+        margin-bottom: 2.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    h1 span {
+        display: block;
+        text-transform: none;
+        font-family: sans-serif;
+        font-weight: 100;
+        font-size: .5em;
+    }
+
+    h1, h2, h3, nav{
+        font-family: sans-serif;
+        font-weight: 900;
+    }
+
+    h1, h2{
+        text-transform: uppercase;
+    }
+
+    h3{
+        color: orange;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    li{
+        display: inline-block;
+    }
+
+    main{
+        max-width: 40rem;
+        margin: auto;
+    }
+/**/
+
+/* 
+Header
+*/
+    header {
+        height: 100vh;
+        padding: 5rem;
+        position: relative;
+        background-image: url(../img/background.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    nav{
+        padding-bottom: 2.5rem;
+        margin-bottom: 5rem;
+        border-bottom: .2rem solid #c6c6c6;
+        display: inline-block;
+    }
+
+    nav a{
+        color: #c6c6c6;
+    }
+
+    #logo{
+        display: block;
+        margin-bottom: 2.5rem;
+    }
+
+    header li{
+        margin: 0 1.25rem;
+    }
+
+    header img{
+        width: 5rem;
+    }
+/**/

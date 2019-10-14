@@ -1,0 +1,44 @@
+ul{
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid red;
+    padding: 0;
+
+    /* 
+    Mettre tous les liens à droite
+    - Modifier le text-aligne sur la parent
+    */
+    text-align: right;
+
+    /* 
+    Bloquer les enfants LI dans le parent UL
+    - Utiliser la position relative
+    */
+    position: relative;
+}
+
+#middle{
+    text-align: center;
+}
+
+li{
+    /* 
+    Mettre les liens sur une seule ligne 
+    - Changer le type de balise LI
+    */
+    display: inline-block;
+}
+
+.onLeft{
+    /* 
+    Mettre le premier lien à gauche de la balise UL
+    - Utiliser la position absolute
+    */
+    position: absolute;
+    left: 0;
+}
+
+.onRight{
+    position: absolute; 
+    right: 0;
+}

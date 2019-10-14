@@ -1,0 +1,34 @@
+/* 
+Sélectionner toutes les balises HTML
+*/
+    *{
+        /* Supprimer toutes les marges */
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer le padding et les borders dans la taille de blocs */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+/**/
+
+/* 
+Passer d'une base 16 à une base 10
+*/
+    html{
+        font-size: 62.5%; /* 1rem => 10px */
+    }
+
+    body{
+        font-size: 1.6rem; /* 1.6 x 10 => 16px */
+    }
+/**/
+
+/* 
+Adapter les images à la taille de la fenêtre
+*/
+    img{
+        max-width: 100%;
+    }
+/**/
