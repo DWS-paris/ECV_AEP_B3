@@ -1,0 +1,14 @@
+.displayAverage, h2{
+    display: none;
+}
+
+/* 
+Créer une class a ajouter en Javascript
+*/
+.displayAverage.open{
+    display: inline;
+}
+
+h2.open{
+    display: block;
+}
