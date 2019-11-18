@@ -1,0 +1,249 @@
+/* 
+Reset
+*/
+    /* Créer des variables CSS */
+    :root{
+        --main-color: #eb5f3f;
+        --asso-color: #222222;
+    }
+
+    /* Sélectionnner toutes les balises */
+    *{
+        /* Supprimer toutes les marges */
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer les border et les padding dans la taille des blocs */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    /* Passer d'une base 16 à une basez 10 */
+    html{
+        font-size: 62.5%; /* => 1rem = 10px */
+    }
+
+    body{
+        font-size: 1.8rem;
+        font-family: 'Merriweather', serif;
+        text-align: center;
+    }
+
+    h1, h2, h3 {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    h1{
+        font-size: 5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 1;
+        max-width: 85rem;
+        margin: 0 auto 4rem auto;
+    }
+
+    h2{
+        margin-bottom: 4rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    section{
+        padding: 8rem 0;
+    }
+
+    img{
+        max-width: 100%;
+    }
+/**/
+
+/* 
+Common
+*/
+    .cta{
+        font-size: 1.5rem;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 1rem;
+        background-color: white;
+        -webkit-border-radius: 2rem;
+        -moz-border-radius: 2rem;
+        -ms-border-radius: 2rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    .cta.orange{
+        color: white;
+        background-color: var(--main-color);
+    }
+/**/
+
+/* 
+Filets
+*/
+    h1::after, h2::after {
+        content: '';
+        display: block;
+        height: .2rem;
+        background: var(--main-color);
+        width: 10rem;
+        margin: 4rem auto 0 auto;
+    }
+/**/
+
+/* 
+Header
+*/
+    header{
+        color: white;
+        padding: 2rem 0 10rem  0;
+        background-image: url('../img/header.jpg');
+        background-size: cover;
+    }
+
+    nav{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 900;
+        text-align: right;
+        text-transform: uppercase;
+        border-bottom: .1rem solid white;
+        padding-bottom: 2rem;
+        margin-bottom: 10rem;
+    }
+
+    nav ul{
+        position: relative;
+        max-width: 95rem;
+        margin: auto;
+    }
+
+    #navLogo{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    nav li{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    header p, #about p{
+        max-width: 65rem;
+        margin: 0 auto 4rem auto;
+    }
+/**/
+
+/* 
+Section #about
+*/
+    #about{
+        color: white;
+        background-color: var(--main-color);
+    }
+
+    #about h2::after{
+        background-color: white;
+    }
+/**/
+
+/* 
+Section #services
+*/
+    #services{
+        max-width: 95rem;
+        margin: auto;
+    }
+
+    #services i{
+        font-size: 5rem;
+        color: var(--main-color);
+    }
+
+    #services li{
+        display: inline-block;
+        width: 20%;
+    }
+/**/
+
+/* 
+Section #download
+*/
+    #download{
+        color: white;
+        background-color: var(--asso-color);
+        clear: both;
+    }
+
+    #download h2::after{
+        display: none;
+    }
+/**/
+
+/* 
+Section #projects
+*/
+    #projects article{
+        position: relative;
+        float: left;
+        width: 33.3333%;
+        line-height: 0;
+    }
+
+    #projects a{
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(235, 94, 64, .5);
+
+        opacity: 0;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+
+    #projects a:hover{
+        opacity: 1;
+    }
+
+    a b {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        line-height: 1;
+    }
+
+    a span{
+        display: block;
+    }
+/**/
+
+/* 
+Footer
+*/
+    footer{
+        padding: 8rem 0;
+        max-width: 65rem;
+        margin: auto;
+    }
+
+    footer li{
+        display: inline-block;
+        width: 45%;
+    }
+/**/
