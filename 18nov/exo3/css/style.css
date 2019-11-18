@@ -1,0 +1,23 @@
+nav ul{
+    position: absolute;
+    left: 0;
+    bottom: -9rem;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    margin: 0;
+
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+}
+
+.open{
+    bottom: 0;
+}
+
+a{
+    color: inherit;
+}
