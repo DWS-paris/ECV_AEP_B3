@@ -1,0 +1,200 @@
+/* 
+Reset
+*/
+    /* Ajouter des variables CSS */
+    :root{
+        --light-grey: #eee;
+        --darkGrey: grey;
+    }
+
+    /* Sélectionner toutes les balises HTML */
+    *{
+        /* Supprimer les marges */
+        padding: 0;
+        margin: 0;
+
+        /* Intégrer les border et les padding dans la taille des bloc */
+        box-sizing: border-box; /* CSS3 */
+    }
+
+    /* Passer d'une base 16 à une base 10 */
+    html{
+        font-size: 62.5%; /* 1rem = 10px */
+    }
+
+    body{
+        font-family: sans-serif;
+        font-size: 1.6rem;
+        text-align: center;
+        background-color: var(--light-grey);
+    }
+
+    /* Limiter la taille des images à la tailles de leur parent */
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    li{
+        list-style: none;
+    }
+/**/
+
+/* 
+Global
+*/
+    header, footer{
+        text-transform: uppercase;
+    }
+
+    header, section, article, footer{
+        padding: 2rem;
+    }
+
+    #hidePassword{
+        display: none;
+    }
+
+    
+/**/
+
+/* 
+Form
+*/
+    input, button {
+        display: block;
+        border: none;
+        width: 100%;
+        font-size: 2rem;
+        padding: 1rem;
+        margin-bottom: 1rem;
+
+        border-radius: .2rem; /* CSS3 */
+    }
+
+    input{
+        border: .1rem solid var(--darkGrey);
+        background-color: var(--light-grey);
+    }
+
+    button{
+        font-weight: 700;
+        color: white;
+        background-color: #1d80f9;
+    }
+/**/
+
+/* 
+Header
+*/
+    header{
+        font-size: 1.1rem;
+        color: var(--darkGrey);
+    }
+
+    header a{
+        color: black;
+    }
+/**/
+
+/* 
+Main
+*/
+    #backPhone{
+        /* Masquer la balise */
+        display: none;
+    }
+
+    article:not(:last-of-type){
+        background-color: white;
+        margin-bottom: 2rem;
+        box-shadow: 0 0 0.2rem var(--darkGrey);
+    }
+
+    #logoInstagram {
+        height: 7rem;
+        margin: 2rem 0;
+    }
+
+    main ul {
+        color: grey;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin-top: 3rem;
+        position: relative;
+    }
+
+    #otherLogin::before{
+        content: '';
+        display: block;
+        height: .1rem;
+        width: 100%;
+        background-color: grey;
+        position: absolute;
+        top: 1.5rem;
+    }
+
+    main ul span {
+        background: white;
+        position: relative;
+        z-index: 1;
+        padding: 1rem;
+        text-transform: uppercase;
+    }
+
+    main a {
+        color: #4680f9;
+    }
+
+    #storeBtns{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #storeBtns li{
+        width: 45%;
+    }
+/**/
+
+/* 
+Footer
+*/
+    footer li {
+        display: inline-block;
+        margin-bottom: 1rem;
+        color: #4680f9;
+        font-weight: 900;
+    }
+/**/
+
+
+/* 
+Media queries
+*/
+    @media screen and (min-width: 950px){
+        /* 
+        Faire apparaitre l'image de gauche
+        */
+        #backPhone {
+            display: initial;
+        }
+
+        /* 
+        Affichre le site en 2 colonnes
+        */
+        main {
+            display: flex;
+            justify-content: space-between;
+            max-width: 90rem;
+            margin: auto;
+        }
+
+        main section {
+            width: 45%
+        }
+    }
+/**/

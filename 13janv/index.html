@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Welcome to Instagram</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        
+        <!-- Ouverture -->
+        <header>
+            <p>Réalisation d'une copie de la page de connexion du site <a href="#">Instagram</a></p>
+        </header>
+
+        <!-- Contenu principal -->
+        <main>
+            <section id="backPhone">
+                <img src="./img/backPhone.png" alt="Présentation dee Instagram">
+            </section>
+
+            <section>
+                <article>
+                    <img src="./img/logo_instagram.svg" alt="Logo Instagram"  id="logoInstagram">
+
+                    <form action="#">
+                        <input type="email" name="email" minlength="5" required placeholder="Adresse email" id="userEmail">
+                        <input type="password" name="password" minlength="5" required placeholder="Mot de passe" id="userPassword">
+                        <p><button type="button" id="showPassword">Afficher</button> <button type="button" id="hidePassword">Masquer</button></p>
+
+                        <button type="submit">Se connecter</button>
+                    </form>
+
+                    <ul id="otherLogin">
+                        <li><span>Ou</span></li>
+                        <li><a href="#">Se connecter avec Facebook</a></li>
+                        <li><a href="#">Mot de passe oublié</a></li>
+                    </ul>
+                </article>
+
+                <article>
+                    <p>Vous n'avez pas de compte ? <a href="#">Inscrivez-vous</a></p>
+                </article>
+
+                <article>
+                    <p>Télécharger l'application</p>
+                    <ul id="storeBtns">
+                        <li><a href="#"><img src="./img/appleStore.png" alt="Logo AppleStore"></a></li>
+                        <li><a href="#"><img src="./img/googlePlay.png" alt="Logo GooglePlay"></a></li>
+                    </ul>
+                </article>
+            </section>
+        </main>
+
+        <!-- Fermeture -->
+        <footer>
+            <ul>
+                <li><a href="#">À propos de nous</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Presse</a></li>
+                <li><a href="#">API</a></li>
+                <li><a href="#">Emplois</a></li>
+                <li><a href="#">Confidentialité</a></li>
+                <li><a href="#">Condition</a></li>
+                <li><a href="#">Répertoire</a></li>
+                <li><a href="#">Langue</a></li>
+                <li><a href="#">© 2017 Instagram</a></li>
+            </ul>
+        </footer>
+
+        <!-- Intégrer le script juste avant la fin du BODY -->
+        <script src="./js/script.js"></script>
+    </body>
+</html>
