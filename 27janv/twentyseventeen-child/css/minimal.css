@@ -1,0 +1,179 @@
+/* 
+Reset
+*/
+    /* Variables CSS */
+    :root{
+        --link-color: orange;
+        --link-color-dark: #a56a00;
+        --max-marge: 10rem;
+        --med-marge: 5rem;
+        --min-marge: 2.5rem;
+        --light-marge: .5rem;
+    }
+
+
+
+    /* Sélectionner toutes les balises (tag) HTML */
+    *{
+        /* Supprimer toutes les marge (ext./int.) */
+        margin: 0;
+        padding: 0;
+
+        /* Intégrer border et padding dans la taille des balises */
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    html{
+        /* Passer d'une base 16 à unee base 10 */
+        font-size: 62.5%;
+    }
+
+    body{
+        font-size: 1.6rem;
+        text-align: center;
+        color: white;
+        background-color: #131313;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+    a{
+        color: inherit;
+    }
+
+    /* Toutes les balises A sauf celles ayant [target="_blank"] */
+    a:not([target="_blank"]){
+        text-decoration: none;
+    }
+
+    h1, h2{
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+
+    .maxWidth{
+        max-width: 35rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+/**/
+
+/* 
+Header
+*/
+    header{
+        height: 100vh;
+        background-image: url("../img/background.jpg");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: var(--med-marge);
+    }
+
+    header img{
+        height: 5rem;
+        margin-bottom: var(--min-marge);
+    }
+
+    nav ul{
+        border-bottom: .2rem solid #c5c5c5;
+        display: inline-block;
+        padding-bottom: var(--min-marge);
+        margin-bottom: var(--med-marge);
+    }
+
+    nav li{
+        font-family: sans-serif;
+        font-weight: 900;
+        color: #c5c5c5;
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    h1{
+        font-size: 6rem;
+    }
+
+    h1 + p{
+        font-family: serif;
+        font-weight: 100;
+        margin-top: 1rem;
+    }
+/**/
+
+/* 
+Main
+*/
+    main{
+        padding: var(--max-marge) 0;
+    }
+
+    section{
+        margin-bottom: var(--max-marge);
+    }
+
+    h2, h3{
+        font-size: 3rem;
+        margin-bottom: var(--min-marge);
+    }
+    
+    h3{
+        font-family: sans-serif;
+        margin-top: var(--med-marge);
+    }
+
+    main p{
+        margin-bottom: 1rem;
+    }
+
+    main a, h3{
+        color: var(--link-color);
+    }
+
+    button{
+        font-size: 2rem;
+        font-family: serif;
+        background-color: var(--link-color);
+        border: none;
+        border-bottom: .5rem solid var(--link-color-dark);
+        padding: 1rem;
+        margin-top: var(--min-marge);
+    }
+
+    main section:nth-of-type(2) li{
+        display: inline-block;
+        width: 32%;
+        padding: var(--light-marge);
+    }
+
+    main section:last-of-type li{
+        list-style: none;
+        margin-bottom: .5rem;
+    }
+
+    input, textarea, form button{
+        font-size: 2rem;
+        display: block;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    input{
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    textarea{
+        height: 15rem;
+    }
+
+    footer{
+        font-family: sans-serif;
+        color: #c5c5c5;
+        padding: 1rem;
+    }
+/**/
